@@ -10,11 +10,13 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
-/* ------------- Test ------------- */
-app.get('/test', function(req, res) {
-  res.render('test');
+app.get('/about', function(req, res) {
+  res.render('about');
 });
-/* -------------------------------- */
+
+app.get('/contact', function(req, res) {
+  res.render('contact');
+});
 
 app.listen(port, function() {
   console.log('App running on http://localhost:' + port);
